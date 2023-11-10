@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-#pragma pack(1)
+#pragma pack(1) // if we not write this line structure padding occurs,if we
+// include this line structure packing occurs
 
 struct stu
 {
