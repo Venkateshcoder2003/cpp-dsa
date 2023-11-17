@@ -12,6 +12,11 @@ int main()
     char temp[20];
     printf("Enter Number Of Employees: \n");
     scanf("%d", &n);
+    if (n <= 0)
+    {
+        printf("INVALID EMPLOYEE NUMBER\n");
+        exit(0);
+    }
 
     struct employee e[n];
 
