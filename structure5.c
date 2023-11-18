@@ -30,10 +30,6 @@ int main()
         printf("Enter Branch Of Student %d: \n", i + 1);
         scanf("%s", temp3);
         strcpy(s[i].branch, temp3);
-        /*for (int j = 0; temp_branch[j] != '\0'; j++)
-        {
-            s[i].branch[j] = toupper(temp_branch[j]);
-        }*/
 
         printf("Enter Marks Of Student %d: \n", i + 1);
         scanf("%f", &s[i].percentage);
