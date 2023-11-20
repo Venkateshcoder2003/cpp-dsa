@@ -13,6 +13,11 @@ int main()
     struct student s, *str_ptr;
 
     str_ptr = (struct student *)malloc(sizeof(struct student));
+    if (str_ptr == 0)
+    {
+        printf("Structure Initialiation Failed\n");
+        return 1;
+    }
     printf("Enter Details Of Student: \n");
     scanf("%s%d%d", str_ptr->name, &str_ptr->marks, &str_ptr->roll);
 
