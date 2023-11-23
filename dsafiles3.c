@@ -16,4 +16,5 @@ int main()
     {
         fputc(str[i], fp);
     }
+    fclose(fp);
 }
