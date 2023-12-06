@@ -22,7 +22,7 @@ int main()
     fclose(fp);
 
     fp = fopen("good1.txt", "r+"); // fp at 0
-    fp1 = fopen("good2.txt", "w+");
+    fp1 = fopen("good2.txt", "w+");//new file
     fseek(fp, -3, SEEK_END); // fp set to last character
     int terminator = ftell(fp);
     printf("LAST CHARACTER NUMBER: %ld", terminator); // loop condition
