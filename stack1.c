@@ -79,7 +79,7 @@ int main()
             }
             else
             {
-                printf("\n%d data Is Popped from Top of of the stack", POP(&s));
+                printf("\n data %d Is Popped from Top of of the stack", POP(&s));
             }
             break;
         case 3:
@@ -89,7 +89,7 @@ int main()
             }
             else
             {
-                PEEK(s);
+                printf("\n Data %d is on The Top Of The Stack", PEEK(s));
             }
             break;
         case 4:
