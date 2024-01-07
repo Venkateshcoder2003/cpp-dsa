@@ -13,7 +13,6 @@ struct process
 
 void findwaitingtime(struct process proc[], int n)
 {
-
     int currenttime = 0, shortest = 0, completed = 0;
     float totalwaitingtime = 0, totalturnaroundtime = 0;
 
@@ -58,7 +57,6 @@ void findwaitingtime(struct process proc[], int n)
 
 int main()
 {
-
     int n;
     printf("Enter Number Of Process: ");
     scanf("%d", &n);
