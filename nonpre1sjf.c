@@ -22,12 +22,10 @@ void findwaitingtime(struct process proc[], int n)
         shortest = -1;
         for (int i = 0; i < n; i++)
         {
-
             if (proc[i].at <= currenttime && proc[i].executed != 1)
             {
                 if (shortest == -1 || proc[i].bt < proc[shortest].bt)
                 {
-
                     shortest = i;
                 }
             }
@@ -52,7 +50,6 @@ void findwaitingtime(struct process proc[], int n)
     printf("PID\tARRIVALTIME\tSTARTING TIME\tBURST TIME\tCOMPLETION TIME\tWAITING Time\tTURN AROUND TIME\n");
     for (int i = 0; i < n; i++)
     {
-
         printf("%d\t%d\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n", proc[i].pid, proc[i].at, proc[i].at + proc[i].wt, proc[i].bt, proc[i].ct, proc[i].wt, proc[i].tat);
     }
     printf("\nAverage Waiting Time: %.2f", totalwaitingtime / n);
