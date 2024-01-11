@@ -10,9 +10,7 @@ struct EMPLOYEE
     int salary;
     int age;
 } e;
-void Add_recoed(FILE *fp);
-void Display_record(FILE *fp);
-void Search_record(FILE *fp);
+
 void Add_record(FILE *fp)
 {
 
@@ -50,29 +48,17 @@ void Search_record(FILE *fp)
     printf("Enter Dept To Be Searched: \n");
     scanf("%s", dept);
 
-    // Header for displaying records
-    printf("_______________________________________________________________________\n");
-    printf("%-20s%-20s%-20s%-20s%-20s\n", "ID", "NAME", "DEPARTMENT", "SALARY", "AGE");
-    printf("_______________________________________________________________________\n");
-
-    // Loop through all records in the file
-    while (fscanf(fp, "%d%s%s%d%d", &e.empid, e.name, e.dept, &e.salary, &e.age) != EOF)
+    if (strcmp(e.dept, dept) == 0)
     {
-        if (strcmp(e.dept, dept) == 0)
-        {
-            printf("%-20d%-20s%-20s%-20d%-20d\n", e.empid, e.name, e.dept, e.salary, e.age);
-            flag = 1; // Record found
-        }
+        Display_record(fp);
+        flag++;
     }
 
-    // Check if no records were found
     if (flag == 0)
     {
         printf("No Data Found for Department: %s\n", dept);
     }
 }
-
-// Other parts of your code remain unchanged.
 
 int main()
 {
