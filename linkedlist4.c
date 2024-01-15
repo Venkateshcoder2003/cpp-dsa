@@ -27,6 +27,18 @@ void DISPLAY(NODE *head)
         printf("END\n");
     }
 }
+/*void DISPLAY(NODE *head)
+{
+    if (head != NULL)
+    {
+        printf("%d->", head->data);
+        DISPLAY(head->next);
+    }
+    else
+    {
+        printf("NULL\n");
+    }
+}*/
 NODE *CREATE_LIST(NODE *head, int data)
 {
     NODE *newnode;
