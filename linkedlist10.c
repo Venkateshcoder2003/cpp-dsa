@@ -41,7 +41,7 @@ NODE *ADD_DETAILS(NODE *head)
     printf("\nThe Details Of The Player %s Is Added At The End of The List", newnode->p.name);
     return head;
 }
-NODE *search(NODE *head, const char name[20])
+NODE *search(NODE *head, const char name[])
 {
     NODE *temp;
     temp = head;
